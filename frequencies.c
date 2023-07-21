@@ -68,6 +68,10 @@ int main(int argc, char *argv[])
 				break;
 		}
 	}
+	
+	// Done with file, close it.
+	fclose(fp);
+
 	// Calculate the occurrence percentage of each letter within the file.
 	float percentages[NUM_CHARS] = {0.0};
 	for(i = 0; i < NUM_CHARS; i++) {
